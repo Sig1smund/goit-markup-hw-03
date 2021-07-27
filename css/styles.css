@@ -352,6 +352,8 @@ body button:active {
   display: flex;
   flex-wrap: wrap;
   margin-top: 56px;
+  margin-right: 0px;
+  width: 1200px;
 }
 
 .projects-list {
