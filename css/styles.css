@@ -326,7 +326,7 @@ body button:active {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 26px;
+  line-height: 1.62;
   letter-spacing: 0.03em;
   text-align: center;
 
