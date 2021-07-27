@@ -103,13 +103,14 @@ body button:active {
   display: flex;
   margin-left: 95px;
   padding-left: 0px;
+  color: var(--primary-text-color);
 }
 
 .nav-list .item {
   margin-right: 50px;
 }
 
-.nav-list :last-child {
+.nav-list:last-child {
   margin-right: 0px;
 }
 
