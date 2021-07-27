@@ -346,6 +346,10 @@ body button:active {
   box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
+.filter-button:nth-last-child(-n + 5) {
+  margin-right: 0px;
+}
+
 /*GALLERY PROJECTS*/
 
 .projects-container {
@@ -354,12 +358,13 @@ body button:active {
   margin-top: 56px;
   margin-right: 0px;
   width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
   flex-basis: 100%/3-30px;
   padding-left: 0px;
   margin-top: 0px;
