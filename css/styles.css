@@ -68,6 +68,10 @@ body button:active {
 .header .container {
   display: flex;
   justify-content: space-between;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 .logo {
@@ -156,7 +160,8 @@ body button:active {
 
 .hero-section {
   background-color: #2f303a;
-  height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-section .hero-title {
@@ -169,7 +174,6 @@ body button:active {
   font-weight: 900;
   color: #ffffff;
 
-  padding-top: 200px;
   padding-bottom: 30px;
   margin: 0;
 }
@@ -199,6 +203,15 @@ body button:active {
 
 .advantages {
   padding-top: 94px;
+}
+
+.advantages .container {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 .advantages-list {
@@ -234,6 +247,15 @@ body button:active {
   padding-bottom: 94px;
 }
 
+.examples .container {
+  display: flex;
+  justify-content: center;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 .works-examples {
   margin: 0;
   margin-bottom: 50px;
@@ -242,8 +264,7 @@ body button:active {
 .examples-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: auto;
-  margin-right: auto;
+
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
@@ -252,6 +273,10 @@ body button:active {
 
 .examples-list > .item {
   margin-right: 30px;
+}
+
+.item:last-child {
+  margin-right: 0px;
 }
 
 /*TEAM*/
@@ -263,10 +288,20 @@ body button:active {
   background-color: #f5f4fa;
 }
 
-.team .team-list {
+.team .container {
+  display: flex;
+  justify-content: center;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.team-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-left: 0px;
 }
 
 .team-list .item {
@@ -275,6 +310,10 @@ body button:active {
   box-shadow: 0px 2px 1px 0px #00000033;
   box-shadow: 0px 1px 1px 0px #00000024;
   box-shadow: 0px 1px 3px 0px #0000001f;
+}
+
+.team-list > .item:nth-child(4) {
+  margin-right: 0px;
 }
 
 .examples .works-examples,
@@ -310,15 +349,30 @@ body button:active {
   padding-bottom: 94px;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 /*GALLERY BUTTONS*/
 
 .filter-container {
   display: flex;
   justify-content: center;
+  padding-top: 90px;
+  padding-bottom: 50px;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
-.filter-container .filter-buttons {
+.filter-buttons {
   display: flex;
+  margin: 0px;
+  padding: 0px;
 }
 
 .filter-buttons button {
@@ -331,7 +385,10 @@ body button:active {
   text-align: center;
 
   margin: 0;
-  padding: 22, 6, 6, 22;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 
   margin-right: 8px;
 
@@ -341,14 +398,14 @@ body button:active {
   border-color: #f5f4fa;
 }
 
+.filter-button:last-child {
+  margin: 0px;
+}
+
 .filter-buttons button:active {
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
   box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
-}
-
-.filter-button:nth-last-child(-n + 5) {
-  margin-right: 0px;
 }
 
 /*GALLERY PROJECTS*/
@@ -356,21 +413,17 @@ body button:active {
 .projects-container {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 56px;
-  margin-right: 0px;
+  justify-content: space-between;
   width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: 100%/3-30px;
+  width: 1200px;
   padding-left: 0px;
   margin-top: 0px;
-  margin-right: -30px;
-  margin-bottom: -30px;
 }
 
 .project {
@@ -386,6 +439,14 @@ body button:active {
   margin-right: 0px;
 }
 
+.title-container {
+  margin: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
 .gallery .filter {
   font-size: 16px;
   font-style: normal;
@@ -395,11 +456,6 @@ body button:active {
   text-align: left;
   font-family: inherit;
   color: var(--secondary-text-color);
-
-  margin: 0px;
-  padding-bottom: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
 }
 
 .gallery .title {
@@ -409,12 +465,6 @@ body button:active {
   line-height: 1.7;
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
-
-  margin: 0px;
-  padding-bottom: 4px;
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-top: 20px;
 }
 
 .projects-list .project {
@@ -427,6 +477,15 @@ body button:active {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: flex-start;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 .footer-logo {
@@ -442,10 +501,17 @@ body button:active {
   color: #ffffff;
 }
 
+.footer .adr-container {
+  display: block;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 .adress {
   font-style: normal;
   margin: 0;
-  padding-bottom: 9px;
   padding-left: 15px;
 }
 
